@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KANBAN</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <div class="board">
+      <form id="todo-form">
+        <input type="text" placeholder="Kerjaan Baru..." id="todo-input" />
+        <button type="submit">TAMBAH</button>
+      </form>
+
+      <div class="lanes">
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">MELAKUKAN</h3>
+
+          <p class="task" draggable="true">Ferdinan</p>
+          <p class="task" draggable="true">Tampu</p>
+          <p class="task" draggable="true">Bolon</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">MENGERJAKAN</h3>
+
+          <p class="task" draggable="true">Medan</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">SELESAI</h3>
+
+          <p class="task" draggable="true">
+            Sumatera Utara
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="tahan.js" defer></script>
+    <script src="kepada.js" defer></script>
+  </body>
+</html>
